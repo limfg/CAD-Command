@@ -1,0 +1,49 @@
+{
+  "name": "CAD-Command",
+  "version": "1.8.1",
+  "description": "CAD Command",
+  "homepage": "https://lidaddy.github.io/CAD-Command/",
+  "main": "dist/data.json",
+  "scripts": {
+    "start": "npm run build",
+    "build": "node build/build.mjs",
+    "dash": "npm run build && node build/dash.js"
+  },
+  "files": [
+    "command",
+    "dist"
+  ],
+  "keywords": [
+    "cli",
+    "Linux",
+    "Command"
+  ],
+  "author": "lidaddy <lidaddy@foxmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lidaddy/CAD-Command.git"
+  },
+  "devDependencies": {
+    "@mapbox/rehype-prism": "0.7.0",
+    "unified": "10.1.0",
+    "rehype-stringify": "9.0.2",
+    "rehype-raw": "6.1.0",
+    "rehype-slug": "5.0.0",
+    "rehype-autolink-headings": "6.1.0",
+    "remark-parse": "10.0.0",
+    "remark-rehype": "9.0.0",
+    "rehype-attr": "1.4.2",
+    "archiver": "5.3.0",
+    "colors-cli": "1.0.27",
+    "ejs": "3.1.6",
+    "fs-extra": "10.0.0",
+    "sitemap-generator": "8.5.1",
+    "sqlite3": "5.0.2",
+    "stylus": "0.54.8",
+    "uglify-js": "3.14.1"
+  },
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  }
+}
